@@ -3,7 +3,6 @@ class Country {
   final String officialName;
   final Map<String, Map<String, String>> nativeName;
   final String flag; // Keep the emoji for reference if needed
-  final String cca2; // Country code (e.g., "TG" for Togo)
   final int population;
   final double area;
   final String region;
@@ -15,7 +14,6 @@ class Country {
     required this.officialName,
     required this.nativeName,
     required this.flag,
-    required this.cca2,
     required this.population,
     required this.area,
     required this.region,
@@ -34,7 +32,6 @@ class Country {
         }),
       ),
       flag: json['flag'] as String,
-      cca2: json['cca2'] as String,
       population: json['population'] as int,
       area: (json['area'] as num).toDouble(),
       region: json['region'] as String,

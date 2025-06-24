@@ -55,30 +55,35 @@ class HomeScreen extends StatelessWidget {
                                       arguments: country,
                                     ),
                                 child: Column(
+                                  mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Image.network(
-                                      country.flagUrl,
-                                      height: 50,
-                                      fit: BoxFit.cover,
-                                      errorBuilder: (
-                                        context,
-                                        error,
-                                        stackTrace,
-                                      ) {
-                                        return Icon(
-                                          Icons.error,
-                                        ); // Fallback if image fails to load
-                                      },
+                                    Flexible(
+                                      child: Image.network(
+                                        country.flagUrl,
+                                        fit: BoxFit.contain,
+                                        errorBuilder: (
+                                          context,
+                                          error,
+                                          stackTrace,
+                                        ) {
+                                          return Icon(
+                                            Icons.error,
+                                          ); // Fallback if image fails to load
+                                        },
+                                      ),
                                     ),
                                     SizedBox(height: 5),
                                     Text(
                                       country.commonName,
                                       textAlign: TextAlign.center,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(fontSize: 14),
                                     ),
                                     Text(
                                       '${country.population.toString()}',
                                       textAlign: TextAlign.center,
+                                      style: TextStyle(fontSize: 12),
                                     ),
                                     IconButton(
                                       icon: Icon(
