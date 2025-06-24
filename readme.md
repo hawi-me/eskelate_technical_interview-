@@ -94,7 +94,6 @@ https://restcountries.com/v3.1/independent?status=true&fields=name,population,fl
 ![image](https://github.com/user-attachments/assets/d8bb58c8-c153-40ea-9f1a-38729f1f3dae)
 ![image](https://github.com/user-attachments/assets/74b79a91-2a84-4e83-925a-2790b516e89e)
 ![image](https://github.com/user-attachments/assets/bc6a1c54-27fd-4053-aff5-bff13a33a156)
-![image](https://github.com/user-attachments/assets/7af86a5a-618d-4518-bfb0-a3698587f596)
 
 
 ![image](https://github.com/user-attachments/assets/6b109d67-96cb-4fac-a83d-2534297841ae)
